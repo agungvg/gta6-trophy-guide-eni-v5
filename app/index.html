@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunset Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <div class="mark" aria-hidden="true">SL</div>
+    <div class="brandtext">
+      <h1>Sunset Ledger</h1>
+      <p class="sub">GTA VI Trophy Guide &amp; Tracker · PlayStation 5 · 55 trophies · works offline</p>
+    </div>
+  </div>
+  <div class="progress-wrap">
+    <div class="bigcount"><span id="earnedCount">0</span><span class="of"> / 55 earned</span><span id="pct" class="pct"></span></div>
+    <div class="bar" role="progressbar" aria-label="Trophies earned"><div id="progressBar" class="fill"></div></div>
+    <div class="gradechips" id="gradeChips"></div>
+  </div>
+</header>
+<div class="audit" id="auditStrip" aria-live="polite"></div>
+<nav class="tabs" aria-label="Sections">
+  <button type="button" data-tab="tracker" class="active">Tracker</button>
+  <button type="button" data-tab="roadmap">Roadmap</button>
+  <button type="button" data-tab="missables">Missables</button>
+  <button type="button" data-tab="sources">Sources</button>
+</nav>
+<main>
+  <section id="tab-tracker" class="tab active" aria-label="Trophy tracker">
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search a trophy, mission or place…" aria-label="Search trophies">
+      <select id="kindFilter" aria-label="Filter by kind">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="side">Character &amp; strangers</option>
+        <option value="collectible">Collectibles</option>
+        <option value="activity">Activities</option>
+        <option value="misc">Everything else</option>
+        <option value="platinum">Platinum</option>
+      </select>
+      <select id="gradeFilter" aria-label="Filter by grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+      <label class="check"><input type="checkbox" id="hideEarned"> Hide earned</label>
+      <label class="check"><input type="checkbox" id="spoilerToggle"> Hide story spoilers</label>
+      <span class="spacer"></span>
+      <button type="button" id="exportBtn">Export</button>
+      <button type="button" id="importBtn">Import</button>
+      <input type="file" id="importFile" accept="application/json,.json" hidden>
+      <button type="button" id="resetBtn">Reset</button>
+    </div>
+    <div id="demoNote" class="demo" hidden>DEMO — progress seeded for this screenshot (13 of 55 earned). Your own progress is saved in this browser.</div>
+    <ul id="trophyList" class="list"></ul>
+    <p id="emptyNote" class="empty" hidden>No trophies match these filters.</p>
+  </section>
+  <section id="tab-roadmap" class="tab" aria-label="Roadmap to the platinum">
+    <div id="roadmapView"></div>
+  </section>
+  <section id="tab-missables" class="tab" aria-label="Missable trophies">
+    <div id="missableView"></div>
+  </section>
+  <section id="tab-sources" class="tab" aria-label="Sources">
+    <div id="sourcesView"></div>
+  </section>
+</main>
+<footer class="foot">
+  <p>Sunset Ledger — an unofficial, open-source GTA VI trophy guide for make.fun's gta6-trophy-guide-01. Not affiliated with Rockstar Games, Sony or PlayStation. No Rockstar artwork is used. All guides are written in our own words and cite their sources; 5 methods are still unconfirmed and are flagged as such. Runs fully offline — it makes no network request.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
